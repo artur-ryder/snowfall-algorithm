@@ -1,0 +1,75 @@
+<html>
+    <title>SnowFall Algorithm</title>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                background-color: #111111;
+                color: rgb(255, 255, 255);
+
+                font-family: "Poppins", sans-serif;;
+            }
+            a{
+                color: rgb(39, 46, 145);
+            }
+            table{
+                border: 1px solid white;
+                border-radius: 10px;
+                border-collapse: collapse;
+                margin: 20px;
+            }
+
+            td{
+                width: 10px;
+                height: 10px;
+            }
+            #buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .controlLabel{
+                text-align: center;
+            }
+            button{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                border-radius: 20px;
+                outline: 0;
+                background-color: #29299c;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>SnowFall Algorithm</h1>
+        <h3>By <a target="_blank" href="https://github.com/artur-ryder">Artur "Ryder"</a></h3>
+        <div id="canvas"></div>
+        <div id="buttons">
+
+            <span class="controlLabel">Wind</span>
+            <div>
+                <button id="decreaseWind">-</button>
+                <button id="increaseWind">+</button>
+            </div>
+
+            <span class="controlLabel">Fall Rate</span>
+            <div>
+                <button id="decreaseFallRate">-</button>
+                <button id="increaseFallRate">+</button>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
